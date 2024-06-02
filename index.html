@@ -46,19 +46,9 @@
   </style>
   <body>
     <div class="hero_area">
+      <br />
+      <br />
       <!-- header section strats -->
-      <header class="header_section">
-        <nav class="navbar navbar-expand-lg custom_nav-container">
-          <a class="navbar-brand" href="index.html">
-            <span>SITUS SEJARAH TRENGGALEK</span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""></span>
-          </button>
-        </nav>
-      </header>
-      <!-- end header section -->
-
       <!-- slider section -->
       <section class="slider_section">
         <div class="slider_container">
@@ -232,28 +222,52 @@
       var initialLeft, initialTop;
 
       // Event listeners for mouse down, move, and up
-      document.getElementById("map-image").addEventListener("mousedown", function (e) {
+      document.getElementById("map-image").addEventListener("mousedown", startDragging);
+      document.addEventListener("mousemove", drag);
+      document.addEventListener("mouseup", stopDragging);
+
+      // Touch events for mobile
+      document.getElementById("map-image").addEventListener("touchstart", startDragging);
+      document.addEventListener("touchmove", drag);
+      document.addEventListener("touchend", stopDragging);
+
+      function startDragging(e) {
+        e.preventDefault();
         isDragging = true;
-        startX = e.clientX;
-        startY = e.clientY;
+        if (e.type === "mousedown") {
+          startX = e.clientX;
+          startY = e.clientY;
+        } else if (e.type === "touchstart") {
+          startX = e.touches[0].clientX;
+          startY = e.touches[0].clientY;
+        }
         initialLeft = parseFloat(e.target.style.left) || 0;
         initialTop = parseFloat(e.target.style.top) || 0;
-      });
+      }
 
-      document.addEventListener("mousemove", function (e) {
+      function drag(e) {
+        e.preventDefault();
         if (isDragging) {
-          var dx = e.clientX - startX;
-          var dy = e.clientY - startY;
+          var clientX, clientY;
+          if (e.type === "mousemove") {
+            clientX = e.clientX;
+            clientY = e.clientY;
+          } else if (e.type === "touchmove") {
+            clientX = e.touches[0].clientX;
+            clientY = e.touches[0].clientY;
+          }
+          var dx = clientX - startX;
+          var dy = clientY - startY;
           var newX = initialLeft + dx;
           var newY = initialTop + dy;
           e.target.style.left = newX + "px";
           e.target.style.top = newY + "px";
         }
-      });
+      }
 
-      document.addEventListener("mouseup", function () {
+      function stopDragging() {
         isDragging = false;
-      });
+      }
     </script>
     <!-- END IMAGES EMBED -->
 
