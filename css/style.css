@@ -6,6 +6,38 @@ body {
   background-color: #ffffff;
 }
 
+#my-map-canvas {
+  max-width: 100%;
+  overflow: hidden;
+  color: red;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#my-map-canvas img {
+  max-width: none !important;
+  background: none !important;
+  font-size: inherit;
+  font-weight: inherit;
+  position: absolute;
+  cursor: move;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  /* For example: */
+  .slider_container {
+    padding-top: 50px;
+  }
+  .hero_area {
+    padding-bottom: 50px;
+  }
+  .carousel-item {
+    text-align: center;
+  }
+}
+
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
