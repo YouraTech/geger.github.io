@@ -11,65 +11,132 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <style>
-      .my-map-canvas {
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .img-box img {
+        border-radius: 10px;
+      }
+
+      .gambar-map {
         max-width: 100%;
-        overflow: hidden;
+        margin: auto;
+        text-align: center;
+      }
+
+      .gambar-map img {
         width: 100%;
-        height: 300px;
-        position: relative;
+        height: auto;
+        display: block;
+        margin: auto;
       }
-      .my-map-canvas img {
-        max-width: none !important;
-        position: absolute;
-        cursor: move;
+
+      .lokasi-full {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
       }
+
+      .lokasi1,
+      .lokasi2,
+      .lokasi3 {
+        flex: 300px;
+        max-width: 900px;
+        text-align: center;
+      }
+
+      .img-thumbnail {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      footer {
+        padding: 20px 0;
+        background: #343a40;
+        color: #fff;
+        text-align: center;
+      }
+
       @media (max-width: 768px) {
-        .my-map-canvas {
-          height: 200px;
+        .detail-box h2 {
+          font-size: 1.5rem;
         }
-        .detail-box h1 {
-          font-size: 24px;
-        }
+
         .detail-box p {
-          font-size: 14px;
+          font-size: 1rem;
         }
-        .img-box img {
-          width: 100%;
-          height: auto;
+
+        .gambar-map {
+          padding: 10px;
+        }
+
+        .lokasi1,
+        .lokasi2,
+        .lokasi3 {
+          flex: 1 1 100%;
         }
       }
+
       @media (max-width: 576px) {
-        .my-map-canvas {
-          height: 150px;
+        .hero_area {
+          padding: 10px 0;
         }
-        .detail-box h1 {
-          font-size: 20px;
+
+        .slider_section {
+          padding: 20px 0;
         }
+
+        .detail-box {
+          padding: 15px;
+        }
+
+        .detail-box h2 {
+          font-size: 1.2rem;
+        }
+
         .detail-box p {
-          font-size: 12px;
+          font-size: 0.9rem;
         }
-        .img-box img {
-          width: 100%;
-          height: auto;
+
+        .gambar-map {
+          padding: 5px;
         }
-        .btn {
-          font-size: 12px;
+
+        .lokasi-full {
+          gap: 5px;
+        }
+
+        .lokasi1,
+        .lokasi2,
+        .lokasi3 {
+          flex: 1 1 100%;
+          max-width: 100%;
+        }
+
+        .img-thumbnail {
+          border-radius: 5px;
+        }
+
+        footer {
+          padding: 10px 0;
         }
       }
     </style>
   </head>
   <body>
+    <br />
     <div class="hero_area">
-      <br />
-      <br />
-      <!-- Slider Section -->
       <section class="slider_section">
         <div class="slider_container">
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="container-fluid">
-                  <div class="row">
+                <div class="container">
+                  <div class="row align-items-center">
                     <div class="col-md-7">
                       <div class="detail-box">
                         <h2 class="fw-bold">
@@ -80,7 +147,7 @@
                           Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat
                           beatae cum, perspiciatis enim, accusantium perferendis.
                         </p>
-                        <a href="">Selengkapnya</a>
+                        <a href="#" class="btn btn-primary">Selengkapnya</a>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -92,8 +159,8 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <div class="container-fluid">
-                  <div class="row">
+                <div class="container">
+                  <div class="row align-items-center">
                     <div class="col-md-7">
                       <div class="detail-box">
                         <h2 class="fw-bold">
@@ -104,7 +171,7 @@
                           Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat
                           beatae cum, perspiciatis enim, accusantium perferendis.
                         </p>
-                        <a href="">Contact Us</a>
+                        <a href="#" class="btn btn-primary">Contact Us</a>
                       </div>
                     </div>
                     <div class="col-md-5">
@@ -117,14 +184,14 @@
               </div>
             </div>
             <div class="carousel_btn-box">
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                 <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                <span class="sr-only">Previous</span>
+                <span class="visually-hidden">Previous</span>
               </a>
               <img src="images/line.png" alt="" />
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                <span class="sr-only">Next</span>
+                <span class="visually-hidden">Next</span>
               </a>
             </div>
           </div>
@@ -132,57 +199,29 @@
       </section>
     </div>
 
-    <!-- Map Section -->
-    <div class="container-fluid mt-5">
-      <h1 class="fw-bold text-center mb-3">Lokasi Pertama</h1>
-      <div class="detail-box">
-        <div class="maping mt-3 shadow-sm border rounded align-center">
-          <div id="my-map-canvas-1" class="my-map-canvas">
-            <a href="coba.html">
-              <img src="map.png" class="img-fluid rounded" alt="Map" id="map-image-1" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-3">
-        <button class="btn btn-danger" onclick="zoomIn('map-image-1')">+</button>
-        <button class="btn btn-danger" onclick="zoomOut('map-image-1')">-</button>
-      </div>
+    <div class="gambar-map mt-5 pt-3">
+      <h1 class="text-center fw-bold">Mapping area</h1>
+      <img src="map.png" alt="Peta" class="img-fluid rounded" />
     </div>
-    <div class="container-fluid mt-5">
-      <h1 class="fw-bold text-center mb-3">Lokasi Kedua</h1>
-      <div class="detail-box">
-        <div class="maping mt-3 shadow-sm border rounded align-center">
-          <div id="my-map-canvas-2" class="my-map-canvas">
-            <a href="coba.html">
-              <img src="map.png" class="img-fluid rounded" alt="Map" id="map-image-2" />
-            </a>
-          </div>
-        </div>
+
+    <div class="lokasi-full container mt-5">
+      <div class="lokasi1">
+        <a href="lokasi1.html">
+          <img src="asset/dilem-sq.png" class="img-thumbnail" alt="Dilem" />
+        </a>
       </div>
-      <div class="text-center mt-3">
-        <button class="btn btn-danger" onclick="zoomIn('map-image-2')">+</button>
-        <button class="btn btn-danger" onclick="zoomOut('map-image-2')">-</button>
+      <div class="lokasi2">
+        <a href="lokasi2.html">
+          <img src="asset/brongkah-sq.png" class="img-thumbnail" alt="Brongkah" />
+        </a>
       </div>
-    </div>
-    <div class="container-fluid mt-5">
-      <h1 class="fw-bold text-center mb-3">Lokasi Ketiga</h1>
-      <div class="detail-box">
-        <div class="maping mt-3 shadow-sm border rounded align-center">
-          <div id="my-map-canvas-3" class="my-map-canvas">
-            <a href="coba.html">
-              <img src="map.png" class="img-fluid rounded" alt="Map" id="map-image-3" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="text-center mt-3">
-        <button class="btn btn-danger" onclick="zoomIn('map-image-3')">+</button>
-        <button class="btn btn-danger" onclick="zoomOut('map-image-3')">-</button>
+      <div class="lokasi3">
+        <a href="lokasi3.html">
+          <img src="asset/gondang-sq.png" class="img-thumbnail" alt="Gondang" />
+        </a>
       </div>
     </div>
 
-    <!-- Footer Section -->
     <footer class="footer_section mt-5">
       <div class="container">
         <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/youngkireza_/">Youratech</a></p>
@@ -194,71 +233,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      var zoomLevels = {
-        "map-image-1": 1,
-        "map-image-2": 1,
-        "map-image-3": 1,
-      };
-
-      function zoomIn(imageId) {
-        zoomLevels[imageId] += 0.1;
-        applyZoom(imageId);
-      }
-
-      function zoomOut(imageId) {
-        zoomLevels[imageId] = Math.max(1, zoomLevels[imageId] - 0.1);
-        applyZoom(imageId);
-      }
-
-      function applyZoom(imageId) {
-        var img = document.getElementById(imageId);
-        img.style.transform = `scale(${zoomLevels[imageId]})`;
-      }
-
-      function startDragging(e) {
-        e.preventDefault();
-        var target = e.target;
-        target.isDragging = true;
-        target.startX = e.type === "mousedown" ? e.clientX : e.touches[0].clientX;
-        target.startY = e.type === "mousedown" ? e.clientY : e.touches[0].clientY;
-        target.initialLeft = parseFloat(target.style.left) || 0;
-        target.initialTop = parseFloat(target.style.top) || 0;
-      }
-
-      function drag(e) {
-        e.preventDefault();
-        var target = document.querySelector(".my-map-canvas img.is-dragging");
-        if (target) {
-          var clientX = e.type === "mousemove" ? e.clientX : e.touches[0].clientX;
-          var clientY = e.type === "mousemove" ? e.clientY : e.touches[0].clientY;
-          var dx = clientX - target.startX;
-          var dy = clientY - target.startY;
-          target.style.left = target.initialLeft + dx + "px";
-          target.style.top = target.initialTop + dy + "px";
-        }
-      }
-
-      function stopDragging(e) {
-        var target = e.target;
-        target.isDragging = false;
-        target.classList.remove("is-dragging");
-      }
-
-      document.querySelectorAll(".my-map-canvas img").forEach(function (image) {
-        image.addEventListener("mousedown", function (e) {
-          startDragging(e);
-          e.target.classList.add("is-dragging");
-        });
-        image.addEventListener("touchstart", function (e) {
-          startDragging(e);
-          e.target.classList.add("is-dragging");
-        });
-        document.addEventListener("mousemove", drag);
-        document.addEventListener("touchmove", drag);
-        image.addEventListener("mouseup", stopDragging);
-        image.addEventListener("touchend", stopDragging);
-      });
-    </script>
   </body>
 </html>
