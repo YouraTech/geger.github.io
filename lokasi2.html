@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Candi Brongkahan</title>
+  </head>
+  <style>
+    .dilem-img img {
+      width: 1350px;
+      height: 460px;
+    }
+    .indent-paragraph {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">CANDI BRONGKAHAN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">galeri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- images -->
+    <div class="dilem-img img-fluid mb-5 mt-4">
+      <div class="text-center rounded">
+        <img class="rounded shadow-sm" src="/asset/brongkahan/9.jpg" alt="" />
+      </div>
+    </div>
+    <hr />
+    <!-- end images -->
+
+    <!-- About -->
+    <div id="about">
+      <div class="about mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Tentang Candi Brongkahan</h1>
+        <p class="ms-5 me-5 indent-paragraph">
+          Candi Brongkah terletak di dekat rumah salah satu warga dusun brongkah wetan, desa kedunglurah, kecamatan pogalan kabupaten trenggalek. Candi Brongkah terletak pada koodinat 080 06’ 46.15” Lintang Selatan–1110 46’ 39.82’’ Bujur
+          Timur dan ketinggian 104 meter dpal. Berjarak kurang lebih 13km dan memakan waktu sekitar 20 menit dari pusat kota Trenggalek, Jaraknya tidak begitu jauh dari jalan raya, kurang lebih 400 meter menuju utara dari jalan raya kedung
+          lurah memasuki perumahan warga, lokasi dari candi Brongkah cukup terawat dengan baik dan memiliki nuansa yang asri dengan adanya taman di sekitar pekarangan candi.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Candi Brongkah ditemukan pada tahun 1994 ketika pemilik tanah sedang melakukan penggalian untuk membuat sumur dan tanpa sengaja mengenai salah satu permukaan dari candi tersebut, yang kemudian dilanjutkan penggalian oleh pihak
+          Trowulan. Candi brongkah diduga merupakan candi Hindu peninggalan masa majapahit dilihat dari relief batu dan peninggalan berupa arca dan lempengan tembaga yang sekarang disimpan di museum Trowulan.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Candi Brongkah merupakan bangunan candi dengan bahan yang digunakan sebagai penyusun bangunan candi berupa bata, wajar saja karena candi ini berdekatan dengan sungai ngasinan yang kaya akan tanah liat sebagai bahan dasar batu
+          bata. Bata yang digunakan sebagai penyusun memiliki ukuran panjang 32-34 cm, lebar 22-26 cm, dan tebal 7,5-8 cm. Candi ini memiliki ukuran 4 x 4 meter dengan luas sekitar 16 meter persegi.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Bangunan ini terkubur 3 meter dibawah tanah, penyebab terkuburnya bangunan didalam tanah diduga karena banjir pada sungai Ngasinan yang berkelanjutan yang menyebabkan lumpur menumpuk di daerah tersebut dibuktikan dengan adanya
+          endapan pasir di dasar bangunan tersebut. Sayangnya bangunan candi ini hanya menyisakan bagian bawah saja yang beberapa batanya ada yang sudah hancur.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- End About -->
+
+    <!-- Galeri -->
+    <div id="galeri">
+      <div class="galeri mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Galeri Candi Brongkahan</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 rounded">
+            <script>
+              for (let i = 1; i <= 12; i++) {
+                document.write(`
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/asset/brongkahan/${i}.jpg" class="gallery-img card-img-top" alt="Image ${i}">
+                    </div>
+                  </div>
+                `);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- End Galeri -->
+
+    <!-- footer -->
+    <footer class="footer_section mt-3 mb-4 text-center">
+      <div class="container">
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/youngkireza_/" style="text-decoration: none; color: gray">Youratech</a></p>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

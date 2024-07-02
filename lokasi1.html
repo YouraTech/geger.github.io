@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Dilem Wilis</title>
+  </head>
+  <style>
+    .dilem-img img {
+      width: 1350px;
+      height: 460px;
+    }
+    .indent-paragraph {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">DILEM WILIS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">galeri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- images -->
+    <div class="dilem-img img-fluid mb-5 mt-4">
+      <div class="text-center rounded">
+        <img class="rounded shadow-sm" src="/asset/dilem/5.jpg" alt="" />
+      </div>
+    </div>
+    <hr />
+    <!-- end images -->
+
+    <!-- About -->
+    <div id="about">
+      <div class="about mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Tentang Dilem Wilis</h1>
+        <p class="ms-5 me-5 indent-paragraph">
+          Dilem Wilis merupakan perkebunan dan tempat pengolahan kopi yang sudah ada sejak zaman kolonial (1929). Bekas pabrik kopi ini berlokasi di sekitar lereng gunung wilis yang lebih tepatnya berada di desa Dompyong, kecamatan
+          Bendungan yang memiliki ketinggian kurang lebih 800 mdpl. Berjarak 20km dari pusat kota dan memakan waktu kurang lebih 40 menit, terbilang cukup lama karena harus melewati jalan yang naik turun dan lumayan bergelombang.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Kata Dilem Wilis sendiri berasal dari kata Dilem yang diambil dari nama Meneer Van Dilem yang merupakan orang Belanda sekaligus pemilik perusahaan Roos Tangler & Co dan kata Wilis yang merupakan nama tempat dari perkebunan
+          tersebut berdiri yang berada disekitaran gunung wilis.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Saat ini peninggalan yang tersisa adalah berupa bangunan pabrik dan mesin-mesin yang digunakan untuk mengolah kopi pada zaman dahulu, meskipun masih ada beberapa yang masih utuh namun sayangnya sudah tidak dapat difungsikan lagi,
+          terdapat pula bangunan belanda yang masih berdiri, meskipun ada beberapa yang sudah termakan usia, dan masih terdapat pula perkebunan yang sekarang masih difungsikan untuk menanam kopi meskipun ada beberapa yang dialih fungsikan
+          untuk menanam cengkeh dan durian.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Dilem Wilis merupakan salah satu sisa dari kebijakan sistem tanam paksa (cultuurstelsel) yang digagas 1830 oleh Johannes Van Den Bosch yang menjabat sebagai Gubernur Jenderal Hindia Belanda (1830-1833). Sistem ini diterapkan di
+          pulau jawa dimana system tersebut memaksa petani local untuk menyisihkan 20% dari tanah yang mereka miliki untuk ditanami tanaman komersial seperti coklat, teh dan kopi dan memberikanya kepada pihak Belanda sebagai ganti kewajiban
+          untuk membayar pajak. Dahulu di Trenggalek terdapat beberapa wilayah yang terkena kebijakan ini, misalkan saja Bendungan (Dompyong) dan Panggul (Gayam).
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Sekarang Dilem Wilis telah berubah yang sebelumnya merupakan pabrik kopi yang tercipta dari sistem tanam paksa berubah menjadi agrowisata yang begitu asri serta menawarkan nilai-nilai sejarah dan menjadi rekomendasi destinasi
+          wisata dengan menghadirkan spot menarik seperti café dengan tema belanda, perkemahan, flying fox dan peternakan sapi perah.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- End About -->
+
+    <!-- Galeri -->
+    <div id="galeri">
+      <div class="galeri mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Galeri Dilem Wilis</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 rounded">
+            <script>
+              for (let i = 1; i <= 32; i++) {
+                document.write(`
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/asset/dilem/${i}.jpg" class="gallery-img card-img-top" alt="Image ${i}">
+                    </div>
+                  </div>
+                `);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- End Galeri -->
+
+    <!-- footer -->
+    <footer class="footer_section mt-3 mb-4 text-center">
+      <div class="container">
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/youngkireza_/" style="text-decoration: none; color: gray">Youratech</a></p>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

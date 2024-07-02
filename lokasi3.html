@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Situs Gondang</title>
+  </head>
+  <style>
+    .dilem-img img {
+      width: 1350px;
+      height: 460px;
+    }
+    .indent-paragraph {
+      text-indent: 2em;
+      text-align: justify;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  </style>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#">SITUS GONDANG</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeri">galeri</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- images -->
+    <div class="dilem-img img-fluid mb-5 mt-4">
+      <div class="text-center rounded">
+        <img class="rounded shadow-sm" src="/asset/gondang/6.jpg" alt="" />
+      </div>
+    </div>
+    <hr />
+    <!-- end images -->
+
+    <!-- About -->
+    <div id="about">
+      <div class="about mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Tentang Situs gondang</h1>
+        <p class="ms-5 me-5 indent-paragraph">
+          Situs Gondang merupakan bangunan kuno bersejarah yang belum lama ini ditemukan arcanya oleh warga sekitar pada tahun 2018 yang kemudian dilanjutkan ekskavasi pertama dapa tahun 2022 dan ekskavasi kedua pada tahun 2023. Situs
+          Gondang terletak didepan salah satu rumah warga yang berada di Desa Gondang Kecamatan Tugu Kabupaten Trenggalek. Situs ini merupakan situs peninggalan sejarah yang memiliki jarak yang lumayan dekat dari pusat kota, yang berjarak
+          hanya 7,5km dari pusat kota dan memakan waktu tembuh sekitar 13 menit saja. Situs ini lumayan tersembunyi karena berada di pekarangan rumah warga yang harus melewati gang diantara pemukiman warga yang berjarak kurang dari 1km ke
+          arah selatan dari pasar Gondang Tugu.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Dari hasil penggalian diketahui bahwa candi ini memiliki ukuran 6 x 6 meter dimana struktur candi ini tertanam tidak begitu dalam dari permukaan tanah, strukturnya pun tidak sempurna karena hanya menyisakan bagian kaki yang
+          tersusun dari batu bata yang memiliki bentuk persegi panjang yang memiliki ketebalan 8 cm, dilihat dari bahan penyusunnya diperkirakan bahwa bangunan candi ini dibangun pada era Mataran Kuno pada aban ke X.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- End About -->
+
+    <!-- Galeri -->
+    <div id="galeri">
+      <div class="galeri mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Galeri Dilem Wilis</h1>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 rounded">
+            <script>
+              for (let i = 1; i <= 9; i++) {
+                document.write(`
+                  <div class="col">
+                    <div class="card shadow-sm">
+                      <img src="/asset/gondang/${i}.jpg" class="gallery-img card-img-top" alt="Image ${i}">
+                    </div>
+                  </div>
+                `);
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!-- End Galeri -->
+
+    <!-- footer -->
+    <footer class="footer_section mt-3 mb-4 text-center">
+      <div class="container">
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/youngkireza_/" style="text-decoration: none; color: gray">Youratech</a></p>
+      </div>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
