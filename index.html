@@ -15,6 +15,29 @@
         font-family: Arial, sans-serif;
       }
 
+      .top-img {
+        position: relative;
+        width: 100%;
+        height: 700px;
+      }
+
+      .top-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .top-img .welcome-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2.9rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+
       .lokasi-full {
         display: flex;
         flex-wrap: wrap;
@@ -28,19 +51,6 @@
       .lokasi3 {
         flex: 300px;
         max-width: 900px;
-        text-align: center;
-      }
-
-      .img-thumbnail {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-
-      footer {
-        padding: 20px 0;
-        background: #343a40;
-        color: #fff;
         text-align: center;
       }
 
@@ -65,10 +75,6 @@
       }
 
       @media (max-width: 576px) {
-        .hero_area {
-          padding: 10px 0;
-        }
-
         .slider_section {
           padding: 20px 0;
         }
@@ -100,10 +106,6 @@
           max-width: 100%;
         }
 
-        .img-thumbnail {
-          border-radius: 5px;
-        }
-
         footer {
           padding: 10px 0;
         }
@@ -111,79 +113,47 @@
     </style>
   </head>
   <body>
-    <div class="hero_area">
-      <section class="slider_section">
-        <div class="slider_container">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-md-7">
-                      <div class="detail-box">
-                        <h2 class="fw-bold">
-                          Selamat Datang Di <br />
-                          Website Situs Sejarah Trenggalek
-                        </h2>
-                        <p>
-                          Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat
-                          beatae cum, perspiciatis enim, accusantium perferendis.
-                        </p>
-                        <a href="#" class="btn btn-primary">Selengkapnya</a>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="img-box">
-                        <img src="images/slider-img.png" alt="" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="container">
-                  <div class="row align-items-center">
-                    <div class="col-md-7">
-                      <div class="detail-box">
-                        <h2 class="fw-bold">
-                          Keterangan <br />
-                          Situs Sejarah Trenggalek
-                        </h2>
-                        <p>
-                          Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat
-                          beatae cum, perspiciatis enim, accusantium perferendis.
-                        </p>
-                        <a href="#" class="btn btn-primary">Contact Us</a>
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="img-box">
-                        <img src="images/slider-img.png" alt="" class="img-fluid" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel_btn-box">
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <i class="fa fa-arrow-left" aria-hidden="true"></i>
-                <span class="visually-hidden">Previous</span>
-              </a>
-              <img src="images/line.png" alt="" />
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                <span class="visually-hidden">Next</span>
-              </a>
-            </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4 shadow-sm">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold me-3" href="#">Welcome!</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            <a class="nav-link" href="#map">Map Area</a>
+            <a class="nav-link" href="lokasi1.html">Dilem Wilis</a>
+            <a class="nav-link" href="lokasi2.html">Brongkahan</a>
+            <a class="nav-link" href="lokasi3.html">Gondang</a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
 
-    <div class="gambar-map mt-5 pt-3">
-      <h1 class="text-center fw-bold">Mapping area</h1>
-      <img src="map.png" alt="Peta" class="img-fluid rounded" />
+    <!-- Top -->
+    <div class="top-img img-fluid mb-5">
+      <img class="rounded" src="/asset/trenggalek-icon.png" alt="Trenggalek Icon" />
+      <div class="welcome-text text-center">
+        Selamat Datang di Website<br />
+        Situs Peninggalan Trenggalek
+        <p class="text-secondary h5">
+          Mari jelajahi warisan budaya Trenggalek yang memukau. Situs ini membawa Anda ke berbagai tempat bersejarah yang penuh dengan kisah dan keindahan. Dari situs-situs arkeologi hingga bangunan bersejarah, nikmati perjalanan waktu yang
+          memukau dan pelajari lebih dalam tentang kekayaan warisan budaya kita.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- End Top -->
+
+    <!-- Map -->
+    <div id="map">
+      <div class="gambar-map mt-5 text-center">
+        <h1 class="fw-bold ms-3 mb-4">Mapping Area</h1>
+        <img src="map-create.png" alt="Peta" class="img-fluid rounded shadow-sm" />
+      </div>
     </div>
 
     <div class="lokasi-full container mt-5">
@@ -203,10 +173,12 @@
         </a>
       </div>
     </div>
+    <!-- End Map -->
 
+    <!-- Footer -->
     <footer class="footer_section mt-5">
       <div class="container">
-        <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/youngkireza_/">Youratech</a></p>
+        <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/ajib.wah/">Geger & Youratech</a></p>
       </div>
     </footer>
 
