@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
@@ -45,6 +46,9 @@
             <li class="nav-item">
               <a class="nav-link" href="#galeri">galeri</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#lokasi">Lokasi</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -65,14 +69,27 @@
       <div class="about mb-5">
         <h1 class="fw-bold mt-5 ms-3 mb-4">Tentang Situs gondang</h1>
         <p class="ms-5 me-5 indent-paragraph">
-          Situs Gondang merupakan bangunan kuno bersejarah yang belum lama ini ditemukan arcanya oleh warga sekitar pada tahun 2018 yang kemudian dilanjutkan ekskavasi pertama dapa tahun 2022 dan ekskavasi kedua pada tahun 2023. Situs
-          Gondang terletak didepan salah satu rumah warga yang berada di Desa Gondang Kecamatan Tugu Kabupaten Trenggalek. Situs ini merupakan situs peninggalan sejarah yang memiliki jarak yang lumayan dekat dari pusat kota, yang berjarak
-          hanya 7,5km dari pusat kota dan memakan waktu tembuh sekitar 13 menit saja. Situs ini lumayan tersembunyi karena berada di pekarangan rumah warga yang harus melewati gang diantara pemukiman warga yang berjarak kurang dari 1km ke
-          arah selatan dari pasar Gondang Tugu.
+          Situs Gondang merupakan bangunan kuno bersejarah yang menjadi saksi bisu peradaban masa lampau di wilayah Trenggalek, Jawa Timur. Keberadaannya baru terungkap pada tahun 2018 ketika warga sekitar menemukan beberapa arca di lokasi
+          tersebut. Penemuan ini memicu keingintahuan para arkeolog dan sejarawan, yang kemudian melakukan ekskavasi pertama pada tahun 2022 dan dilanjutkan dengan ekskavasi kedua pada tahun 2023. Rangkaian penggalian ini bertujuan untuk
+          mengungkap lebih banyak informasi tentang struktur dan fungsi bangunan kuno ini.
         </p>
         <p class="ms-5 me-5 indent-paragraph">
-          Dari hasil penggalian diketahui bahwa candi ini memiliki ukuran 6 x 6 meter dimana struktur candi ini tertanam tidak begitu dalam dari permukaan tanah, strukturnya pun tidak sempurna karena hanya menyisakan bagian kaki yang
-          tersusun dari batu bata yang memiliki bentuk persegi panjang yang memiliki ketebalan 8 cm, dilihat dari bahan penyusunnya diperkirakan bahwa bangunan candi ini dibangun pada era Mataran Kuno pada aban ke X.
+          Situs Gondang berlokasi strategis di depan salah satu rumah warga di Desa Gondang, Kecamatan Tugu, Kabupaten Trenggalek. Keunikan situs ini terletak pada lokasinya yang relatif dekat dengan pusat kota, hanya berjarak 7,5 km atau
+          sekitar 13 menit perjalanan.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Meskipun demikian, situs ini cukup tersembunyi karena berada di pekarangan rumah warga dan harus diakses melalui gang sempit di antara pemukiman penduduk. Untuk mencapainya, pengunjung perlu berjalan kurang dari 1 km ke arah
+          selatan dari pasar Gondang Tugu.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Hasil penggalian arkeologis mengungkapkan bahwa candi ini memiliki dimensi 5,80 x 5,80 meter, dengan struktur yang tidak tertanam terlalu dalam dari permukaan tanah. Sayangnya, bangunan ini tidak lagi utuh dan hanya menyisakan
+          bagian kaki candi. Struktur yang tersisa terdiri dari susunan batu bata berbentuk bujur sangkar dengan ketebalan 8 cm. Berdasarkan bahan penyusun dan teknik konstruksinya, para ahli memperkirakan bahwa candi ini dibangun pada era
+          Mataram Kuno, sekitar abad ke-10 Masehi.
+        </p>
+        <p class="ms-5 me-5 indent-paragraph">
+          Penemuan beberapa arca di lokasi ini semakin memperkaya nilai arkeologis dan historis Situs Gondang. Di antara temuan penting tersebut adalah arca Agastya, arca Mahakala, dan arca Apsari. Keberadaan arca-arca ini menjadi bukti
+          kuat bahwa candi ini dulunya berfungsi sebagai tempat pemujaan Dewa Siwa, salah satu dewa utama dalam pantheon Hindu. Hal ini memberikan gambaran tentang kehidupan keagamaan dan spiritual masyarakat Jawa Kuno di wilayah Trenggalek
+          pada masa itu.
         </p>
       </div>
     </div>
@@ -82,15 +99,28 @@
     <!-- Galeri -->
     <div id="galeri">
       <div class="galeri mb-5">
-        <h1 class="fw-bold mt-5 ms-3 mb-4">Galeri Dilem Wilis</h1>
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Galeri Gondang</h1>
         <div class="container">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 rounded">
             <script>
+              const descriptions = [
+                "Deskripsi gambar 1",
+                "Deskripsi gambar 2",
+                "Deskripsi gambar 3",
+                "Deskripsi gambar 4",
+                "Deskripsi gambar 5",
+                "Deskripsi gambar 6",
+                "Deskripsi gambar 7",
+                "Deskripsi gambar 8",
+                "Deskripsi gambar 9",
+                "Deskripsi gambar 10",
+              ];
+
               for (let i = 1; i <= 9; i++) {
                 document.write(`
                   <div class="col">
                     <div class="card shadow-sm">
-                      <img src="asset/gondang/${i}.jpg" class="gallery-img card-img-top" alt="Image ${i}">
+                      <img src="asset/gondang/${i}.jpg" class="gallery-img card-img-top" alt="Image ${i}" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage('asset/gondang/${i}.jpg', descriptions[${i - 1}])">
                     </div>
                   </div>
                 `);
@@ -103,12 +133,51 @@
     <hr />
     <!-- End Galeri -->
 
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Gambar</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img id="modalImage" src="" class="img-fluid" alt="Gambar" />
+            <p id="modalDescription" class="mt-2"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <!-- Lokasi -->
+    <div id="lokasi">
+      <div class="lokasi mb-5">
+        <h1 class="fw-bold mt-5 ms-3 mb-4">Lokasi</h1>
+        <p class="ms-5 me-5">
+          Berikut adalah lokasi dari situs <a href="https://maps.app.goo.gl/g8idQzCD3sFpwf9s9" style="font-weight: bold; text-decoration: none; color: black">Gondang <i class="fa-solid fa-arrow-right"></i></a>
+        </p>
+      </div>
+    </div>
+    <hr />
+    <!-- End Lokasi -->
+
     <!-- footer -->
     <footer class="footer_section mt-3 mb-4 text-center">
       <div class="container">
         <p>&copy; <span id="displayYear"></span> All Rights Reserved By <a href="https://www.instagram.com/youngkireza_/" style="text-decoration: none; color: gray">Youratech</a></p>
       </div>
     </footer>
+
+    <script>
+      function showImage(src, description) {
+        document.getElementById("modalImage").src = src;
+        document.getElementById("modalDescription").innerText = description;
+      }
+
+      // Display the current year in the footer
+      document.getElementById("displayYear").innerText = new Date().getFullYear();
+    </script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
